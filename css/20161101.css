@@ -1,0 +1,314 @@
+body {
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    font-family: '微软雅黑'!important;
+    -webkit-font-smoothing: antialiased;
+    word-break: break-all;
+}
+::selection{color:white;background-color: #1CABC9;}
+a{text-decoration: none;cursor:pointer;}
+li{list-style:none;}
+.hot-set{position:relative;}
+.hot-set:hover{color:#0958A5!important;cursor:pointer;}
+.hot-set:before{position:absolute;content:'';display:inline-block;height:1px;bottom:-4px;left:0;width:100%;transition:all 0.3s ease-in;-webkit-transition:all 0.3s ease-in;    -webkit-transform: scale(0, 1);transform: scale(0, 1); background: #02a0e9;}
+.hot-set:hover:before{transform:scale(1);-webkit-transform:scale(1);}
+
+.section{
+    position: relative;
+    background-color: #fff;
+    overflow: hidden;
+    text-align: center;
+}
+/*第一屏样式设置*/
+.section1{
+    background: url("../img/bg1.jpg") no-repeat center;
+    background-size: cover;
+    /*background: #81C2D6;*/     
+}
+.section1 h1{
+    margin-top: 5%;
+    color: #0958A5;
+    font-size: 35px;
+    font-weight:bolder;
+	letter-spacing:3px;
+}
+.section1 h1:hover{
+    color: #161823;
+   cursor:pointer;
+}
+.section1 h1 em{color:#0958A5!important;}
+.section1 h1.hstyle{
+    opacity: .8;}
+.section1 .dianbo{font-weight:bolder;color:black;}
+.section1 p{
+	text-indent:30px;
+    margin: 800px auto 0;
+    color:#161823;
+    /*color: #858689;*/
+    font-size: 16px;
+    width: 62%;
+    line-height:35px;
+	text-align:left;
+	letter-spacing:1px;
+}
+.section1 h2{margin:25px auto 15px;}
+.section1 h2.hot-set{display:inline-block;color: #000!important;font-size:18px;}
+.section1 h2.hot-set:hover{color: #02a0e9!important;cursor:pointer;}
+.section1 span.hot-set{display:inline-block;color: #69ABF8!important;}
+.section1 span.hot-set:hover{color: #02a0e9!important;cursor:pointer;}
+.section1 a{
+    display: inline-block;
+    margin: 4% auto 0;
+    color: black;
+    font-size: 18px;
+    /*opacity: .9;*/
+}
+.section1 .organizer-list{width:50%;
+    overflow: hidden;
+    text-align: center;
+	margin:0 auto 0;
+	}
+.section1 .organizer-list li{
+	padding-top: 0px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    padding-left: 0px;
+	}
+
+.section1 .organizer-list li a{text-decoration: none;
+    cursor: pointer;
+    
+    -webkit-transition: color 0.1s ease-in-out;
+    -moz-transition: color 0.1s ease-in-out;
+    -o-transition: color 0.1s ease-in-out;
+    transition: color 0.1s ease-in-out;
+	margin:0 auto 0;
+	}	
+.section1 .organizer-list li a i{
+  -webkit-filter: grayscale(100%) brightness(2) contrast(0.4);
+  -moz-filter: grayscale(100%) brightness(2) contrast(0.4);
+  -ms-filter: grayscale(100%) brightness(2) contrast(0.4);
+  -o-filter: grayscale(100%) brightness(2) contrast(0.4);
+  filter: grayscale(100%) brightness(2) contrast(0.4);
+  filter: #808080 opacity(0.4);
+}
+.section1 .organizer-list li a:hover i {
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  filter: grayscale(0%);
+  filter: gray;
+}
+.section1 .part{
+    width: 140px;
+    height: 58px;
+    display: inline-block;
+    vertical-align: top;
+    background: url('../img/partners2.png');}
+.section1 .organizer-list .fenghuang{background-position: 0px 0px;}
+.section1 .organizer-list .meishu {background-position: -170px 0px;}
+.section1 .organizer-list .msdb{background-position: 0px -58px;}
+.section1 .organizer-list .zizhuxuexi {background-position: -170px -58px;}
+/*第二屏样式设置*/
+.section2{
+    /*background: #f2f2f2 url("../img/technology_hero_large_2x.jpg") no-repeat bottom;*/
+    background-size: 100%;
+	/*background:#DBCBB8;/**/
+	}
+.section2 h1{
+    margin: 15px auto;
+    color: #0958A5; /*#02a0e9*/
+    font-size: 35px;
+    font-weight: normal;
+	width:84%;
+}
+.section2 h1:after{left:0;}
+.section2 h1:before{right:2%;}
+.section2 h1:after,.section2 h1:before{content: '';
+    width: 320px;
+    height: 1px;
+    background-color: #4a96b2;
+    position: absolute;
+    top: 22px;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;}
+	
+.section2 .para2{
+	text-indent:30px;
+    margin: 10px auto 0;
+    color:#161823;
+    /*color: #858689;*/
+    font-size: 16px;
+    width: 70%;
+    /*opacity: .6;*/
+    line-height:30px;
+	text-align:left;
+	letter-spacing:1px;}
+.section2 a{
+    display: inline-block;
+    margin: 2rem auto 0;
+    color: #08c;
+    font-size: 18px;
+}
+.section2 .row{
+    width: 87%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    color: #333;
+    font-size: 16px;
+	margin:0 auto;
+}
+.section2 .column{
+    margin: 5px 20px;
+    background-color: #f2f2f2;
+}
+.section2 .column img{
+    height: 300px;
+    margin-top: 10px;
+}
+
+.section2 .column li{
+	line-height: 16px;
+    font-size: 16px;
+    color: #02a0e9;
+    border: 1px solid #02a0e9;
+    border-radius: 6px;
+    padding: 6px 10px;
+    float: left;
+    margin-left: 23px;
+    cursor: pointer;
+	margin-top:10px;
+}
+.section2 .column li:hover {
+    background-color: #02a0e9;
+    color: #fff;
+}
+.section2 .column a{
+    display: inline-block;
+    margin: 10px auto 0;
+    color: #08c;
+}
+i.teshu{color:black;}
+
+/*第三屏样式设置*/
+.section3{
+    background: url("../img/bg11.jpg") no-repeat center;
+    background-size: 100%;
+	/*background-color:hsl(0,1%,90%);*/
+}
+.section3 h1{
+    margin: 20px auto 20px -1500px;
+    color: #0958A5; /*#02a0e9*/
+    font-size: 30px;
+    font-weight: normal;
+	width:61%;letter-spacing:2px;
+}
+
+.section3 p{
+    margin: 20px auto 20px 1500px;
+    color: #FAFEFD;
+    font-size: 18px;
+    width: 30%;
+    line-height: 35px;
+}
+.section3 .para3{display:block;border-radius:15px;background-color:#A1AFC9;padding:5px 15px;}
+.section3 .para3:hover{border-radius:0px;background-color:#00CCF1;transition: all 0.9s ease-in-out;-webkit-transition: all 0.9s ease-in-out;cursor:pointer;
+    -moz-transition: all 0.9s ease-in-out;}
+.section3 #table{width: 900px;
+    height: 470px;
+    /*separate
+    border-spacing: 3px;*/
+	border-collapse: collapse;
+    font-size: 1.1em;
+    margin: 10px auto;
+	background: #C2CCD0;
+}
+.section3 table .thead{font-size:20px;color:#0958A5;font-size:bold;}
+table tr td {
+    border: 1px black solid;
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+	color:#000;
+}
+table tr td:hover{color:#0958A5;cursor:pointer;}
+table tr td span{color:#0958A5;letter-spacing:2px;}
+table .td-tit{letter-spacing:2px;font-size:20px;}
+
+.section3 a{
+    display: inline-block;
+    margin: 20px auto 0;
+    color: #08c;
+    font-size: 18px;
+}
+
+/*第四屏样式设置*/
+.section4{
+    /*background: #f2f2f2 url("../img/technology_hero_large_2x.jpg") no-repeat bottom;*/
+    background-size: 100%;
+	background-color:#FFFFE5;}
+.section4 h1{
+    margin: 0.8rem auto;
+    color: #0958A5;
+    font-size: 35px;
+    font-weight: normal;display: inline-block;cursor:pointer;letter-spacing:1px;
+}
+.section4 a{
+    display: inline-block;
+    margin: -2rem auto 0;
+    color: #08c;
+    font-size: 16px;
+}
+.section4 p.head1{font-size:18px;display:inline-block;color:#0958A5;}
+.section4 .content{width:82%;margin:0 auto;
+height:70%;
+}
+.section4 .content .row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    color: #333;
+    font-size: 16px;
+	margin:0 auto;
+}
+.column-left{margin-right:15px;}
+.section4 .column{
+    margin: 2px 0px;
+	width:100%;
+	height:100%;
+	display:block;margin:3px;padding:0 5px;
+}
+.section4 .column p{color:#6D6D6D;line-height:30px;text-align:left;}
+.con1{width:90%;height:30%;margin:20px;padding:8px 10px;background:#fff;}
+.con1:hover{box-shadow: 0 0 2px 3px #d7d7d7;}
+.con1 span{display:block;text-align:left;margin:5px auto;line-height:30px;text-align:left;}
+.con1 h4{display:inline-block;margin:12px 15px;color:#2e4e7e;}
+.con1 .biaoti{display:inline-block;margin:12px auto;background:red;padding:5px 12px;color:white;border-radius:2px;cursor:pointer;}
+.con1  .yellow{background:black;}
+.con1  .purple{background:purple;}
+.con1  .green{background:green;}
+.con1  .zise{background:#8d4bbb;}
+.con1  .pink{background:pink;}
+.con1 strong{color:#808080;display:inline-block;}
+
+/*第五屏样式设置*/
+.section5 {background: #f2f2f2 url("../img/tenyear2.jpg") no-repeat bottom;
+background-size: 100%;
+}
+.section5 a{
+    display: inline-block;
+    margin: 45% auto 0;
+    color: black;
+    font-size: 16px;
+    /*opacity: .9;*/
+}
